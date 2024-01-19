@@ -4,37 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Calculadora</title>
-
+    <title>Promesas</title>
 </head>
 <body>
-    <div>
-        <h1>Bienvenido a mini calculadora</h1><hr>
-    </div>
-    <div class="calculadora">
-        <input type="text" readonly id="pantalla">
-        <div class="botones">
-            <button onclick="agregarCaracter('7')">7</button>
-            <button onclick="agregarCaracter('8')">8</button>
-            <button onclick="agregarCaracter('9')">9</button>
-            <button onclick="agregarCaracter('/')">/</button>
-            <button onclick="agregarCaracter('4')">4</button>
-            <button onclick="agregarCaracter('5')">5</button>
-            <button onclick="agregarCaracter('6')">6</button>
-            <button onclick="agregarCaracter('*')">*</button>
-            <button onclick="agregarCaracter('1')">1</button>
-            <button onclick="agregarCaracter('2')">2</button>
-            <button onclick="agregarCaracter('3')">3</button>
-            <button onclick="agregarCaracter('-')">-</button>
-            <button onclick="agregarCaracter('0')">0</button>
-            <button onclick="agregarCaracter('.')">.</button>
-            <button onclick="calcular()">=</button>
-            <button onclick="agregarCaracter('+')">+</button>
-            <button onclick="limpiarPantalla()">c</button>
-        </div>
-    </div>
-    <div class="pie">
-        <footer>Luciano Maquin 2019274 © Kinal 2024</footer>
+    <div class="container">
+        <form id="miFormulario">
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" type="text" required>
+            <button type="button" onclick="enviarDatos">Enviar</button>
+        </form>
+        <p id="mensaje" class="oculto"></p>
     </div>
     <script src="logica.js"></script>
 </body>
